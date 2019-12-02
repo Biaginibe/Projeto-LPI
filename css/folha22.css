@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fundo2.jpeg');
+    background-size: 100%;
+}
+
+form{
+    color: #c5cccb;
+}
+
+ul{
+    list-style: none;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav{
+    background-color: rgba(16,16,16, .5);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+a{
+    display: block;
+    padding: 20px 5px;
+    color:white;
+}
+
+a:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+ul{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+/*CLASSES*/
+.btn{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 80px;
+    text-align: center;
+    border: 3px solid #009688;
+    display: block;
+    text-decoration: none;
+    margin: 40px auto;
+    color: #009688;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.btn:hover{
+    color: #3cd8c8;
+    border: 3px solid #3cd8c8;
+}
+
+.perfil{
+    opacity: .5;
+}
+
+.desce{
+    position: absolute;
+    top: 23%;
+}
+.descer{
+    position: absolute;
+    top: 27%;
+}
+
+/*ID*/
+#bloco_centro{
+    margin: auto;
+    width: 500px;
+}
+
+#login{
+    width: 175px;
+    margin-left: 33%;
+    margin-top: 40%;
+    font-size: 20px;
+}
+
+#registra{
+    width: 175px;
+    margin-left: 46%;
+    margin-top: 15%;
+    font-size: 20px;
+}

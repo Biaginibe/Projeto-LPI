@@ -1,0 +1,20 @@
+body{
+    background-image: url('../img/fundo2.png');
+    background-size: 100%;
+}
+
+.voltar{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #27A938;
+    font-size: 50px;
+    border: 2px solid #27A938;
+    padding: 5px;
+}
+
+.voltar:hover{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(151, 201, 158);
+    font-size: 50px;
+}

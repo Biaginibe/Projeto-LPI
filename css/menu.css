@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    color: red;
+    padding: 15px;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    color:white;
+}
+
+a:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+}
+
+body{
+    font-family: arial;
+}
+
+ul{
+    color: blue;
+    list-style: none;
+    position: absolute;
+    top: 70px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav{
+    background-color: rgba(16,16,16, .5);
+    width: 350px;
+    height: 100%;
+}
+

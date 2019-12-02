@@ -1,0 +1,21 @@
+tecnico
+C	create(insert)	ok	
+R	read		ok
+U	update		ok
+D	delete		ok
+
+serviço
+C	create(insert)	ok	
+R	read		ok
+U	update		ok
+D	delete		ok
+
+cliente
+C	create(insert)	ok	
+R	read		ok
+U	update		ok
+D	delete		ok
+
+listar serviços no tecnico
+listar feedback no adm
+C	inserir	na pag tecnico 
