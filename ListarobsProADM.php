@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/listar.css"/>
         <?php
         session_start();
             //isset verifica se a variavel existe
@@ -26,17 +27,22 @@
 
         while($linha = mysqli_fetch_array($executar)){
         ?>
-        Codigo da obs:<input type="text" value="<?php echo $linha["cod"]?>" readonly>
-        Observação:<input type="text" value="<?php echo $linha["obs_tecnica"]?>" readonly>
-        Status:<input type="text" value="<?php echo $linha["status"]?>" readonly>
-        Data prevista pra conclusão:<input type="text" value="<?php echo $linha["data_conclusao"]?>" readonly>
+        <label>Codigo da obs:</label>
+        <input type="text" value="<?php echo $linha["cod"]?>" readonly>
+        <label>Observação:</label>
+        <input type="text" value="<?php echo $linha["obs_tecnica"]?>" readonly>
+        <label>Status:</label>
+        <input type="text" value="<?php echo $linha["status"]?>" readonly>
+        <label>Data prevista pra conclusão:</label>
+        <input type="text" value="<?php echo $linha["data_conclusao"]?>" readonly>
 	    <br/><br/><br/>
     
     <?php 
     } 
     ?>
-    
-    <a href="homepageadm.php">Voltar</a>
+    <div class="voltar">
+        <a href="homepageadm.php">Voltar</a>
+    </div>
     
 
     </body>

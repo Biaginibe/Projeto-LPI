@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/fundo2.jpeg);
+    background-size: 100%;
+}
+
+label{
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial;
+    color: rgb(155, 218, 233);
+}
+
+a:hover{
+    color: rgb(202, 236, 245);
+}
+
+.links{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2%;
+    padding-top: 1%;
+    width: 165px;
+}
+
+.voltar{
+    margin-top: 10%;
+    margin-inline-start: 95%;
+}
+
+.mostra{
+    width: 80%;
+    padding-top: 30%;
+    margin: auto;
+}

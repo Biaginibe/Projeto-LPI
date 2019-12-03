@@ -1,3 +1,8 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/fundoyellow.css" />
+    </head>
+<body>
 <?php
 
 	include_once 'conexao.php';
@@ -17,9 +22,8 @@
 	$executar = mysqli_query($conn,$alterar);
 	if($executar)
 	{
-		echo "Dados alterado com sucesso";
-		echo "<br>";
-		echo "<a href='listarServicos.php'>Voltar</a>";
+		echo "<img style='position: absolute; left: 33%; top: 10%;'src='img/batatadadosalterados.png'/>";
+		echo "<br/><a class='voltar' href='listarServicos.php'>Voltar</a><br/>";
 	}
 	else
 	{
@@ -27,3 +31,5 @@
 	}
 	
 ?>
+</body>
+</html>

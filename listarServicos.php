@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/listar.css"/>
         <?php
         session_start();
             //isset verifica se a variavel existe
@@ -26,20 +27,24 @@
 
         while($linha = mysqli_fetch_array($executar)){
         ?>
-        Codigo do Tecnico:<input type="text" value="<?php echo $linha["codtecnico"]?>" readonly>
-        Codigo do Cliente:<input type="text" value="<?php echo $linha["codcliente"]?>" readonly>
-        Descrição:<input type="text" value="<?php echo $linha["descricao"]?>" readonly>
+        <label>Codigo do Tecnico:</label>
+        <input type="text" value="<?php echo $linha["codtecnico"]?>" readonly>
+        <label>Codigo do Cliente:</label>
+        <input type="text" value="<?php echo $linha["codcliente"]?>" readonly>
+        <label>Descrição:</label>
+        <input type="text" value="<?php echo $linha["descricao"]?>" readonly>
         
-        
-        <a href="MostrarAlterarServico.php?id=<?php echo $linha["cod"];?>">Alterar</a>
-	    <a href="ExcluirDadosServico.php?id=<?php echo $linha["cod"];?>">Excluir</a>
-	    <br/><br/><br/>
+        <div class="links">
+            <a href="MostrarAlterarServico.php?id=<?php echo $linha["cod"];?>">Alterar</a>
+            <a href="ExcluirDadosServico.php?id=<?php echo $linha["cod"];?>">Excluir</a>
+        </div>
     
     <?php 
     } 
     ?>
-    
-    <a href="homepageadm.php">Voltar</a>
+    <div class="voltar">
+        <a href="CRUDservicos.php">Voltar</a>
+    </div>
     
 
     </body>

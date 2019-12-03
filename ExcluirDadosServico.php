@@ -1,3 +1,8 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/fundored.css" />
+    </head>
+<body>
 <?php
 
 	include_once 'conexao.php';
@@ -7,12 +12,14 @@
 	$executar = mysqli_query($conn,$excluir);
 	if($executar)
 	{
-		echo "Serviço excluido com sucesso";
+		echo "<img style='position: absolute; left: 30%; top: 30%'src='img/dadosexcluidos.png'/>";
 		echo "<br>";
-		echo "<a href='listarServicos.php'>Voltar</a>";
+		echo "<a class='voltar' href='listarServicos.php'>Voltar</a>";
 	}
 	else
 	{
 		echo "Erro ao excluir os dados";
 	}
 ?>
+</body>
+</html>

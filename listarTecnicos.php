@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/listar.css"/>
         <?php
         session_start();
             //isset verifica se a variavel existe
@@ -26,21 +27,26 @@
 
         while($linha = mysqli_fetch_array($executar)){
         ?>
-        Codigo:<input type="text" value="<?php echo $linha["cod"]?>" readonly>
-        Nome:<input type="text" value="<?php echo $linha["nome"]?>" readonly>
-        Endereço:<input type="text" value="<?php echo $linha["endereco"]?>" readonly>
-        Telefone:<input type="text" value="<?php echo $linha["telefone"]?>" readonly>
+        <label>Codigo:</label>
+        <input type="text" value="<?php echo $linha["cod"]?>" readonly>
+        <label>Nome:</label>
+        <input type="text" value="<?php echo $linha["nome"]?>" readonly>
+        <label>Endereço:</label>
+        <input type="text" value="<?php echo $linha["endereco"]?>" readonly>
+        <label>Telefone:</label>
+        <input type="text" value="<?php echo $linha["telefone"]?>" readonly>
         
-        
-        <a href="MostrarAlterarTecnico.php?id=<?php echo $linha["cod"];?>">Alterar</a>
-	    <a href="ExcluirDadosTecnico.php?id=<?php echo $linha["cod"];?>">Excluir</a>
-	    <br/><br/><br/>
+        <div class="links">
+            <a href="MostrarAlterarTecnico.php?id=<?php echo $linha["cod"];?>">Alterar</a>
+	        <a href="ExcluirDadosTecnico.php?id=<?php echo $linha["cod"];?>">Excluir</a>
+	    </div>
     
     <?php 
     } 
     ?>
-    
-    <a href="homepageadm.php">Voltar</a>
+    <div class="voltar">
+        <a href="CRUDtecnicos.php">Voltar</a>
+    </div>
     
 
     </body>

@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/listar.css"/>
         <?php
         session_start();
             //isset verifica se a variavel existe
@@ -26,18 +27,21 @@
 
         while($linha = mysqli_fetch_array($executar)){
         ?>
-        Codigo do Cliente:<input type="text" value="<?php echo $linha["codcliente"]?>" readonly>
-        Descrição do serviço:<input type="text" value="<?php echo $linha["descricao"]?>" readonly>
-
-        <a href="CRUDobsTecnica.php?id<?php echo $linha["cod"];?>">Inserir Feedbacks do serviço</a>
-	    <br/><br/><br/>
+        <label>Codigo do cliente:</label>
+        <input type="text" value="<?php echo $linha["codcliente"]?>" readonly>
+        <label>Descrição do serviço:</label>
+        <input type="text" value="<?php echo $linha["descricao"]?>" readonly>
+        <div class="links">
+            <a href="CRUDobsTecnica.php?id<?php echo $linha["cod"];?>">Inserir Feedbacks do serviço</a>
+        </div>
+	    
         
     <?php 
     } 
     ?>
-    
-    <a href="homepageuser.php">Voltar</a>
-    
+    <div class="voltar">
+        <a href="homepageuser.php">Voltar</a>
+    </div>
 
     </body>
 </html>

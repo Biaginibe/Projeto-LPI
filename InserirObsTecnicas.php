@@ -15,8 +15,8 @@ $sql = "insert into tbobstecnica (obs_tecnica, status, data_conclusao)
 values('$obs', '$status', '$conc')";
 $query=mysqli_query($conn,$sql);
 
-echo "<img style='position: absolute; left: 30%;'src='img/batatadadosinseridoscomsucess.png'/>";
-echo "<br/><a class='voltar' href='homepageuser.php'>Voltar</a><br/>"
+echo "<img style='position: absolute; left: 33%; top: 10%;'src='img/batatadadosinseridoscomsucess.png'/>";
+echo "<br/><a class='voltar' href='CRUDobstecnica.php'>Voltar</a><br/>"
 
 ?>
 </body>
