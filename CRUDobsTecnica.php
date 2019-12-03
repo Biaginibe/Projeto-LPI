@@ -54,7 +54,7 @@
         </div>
         <div id="q">
             <input class="btn" type="submit" value=Registrar />
-            <a href="listarServicos.php" class="btn">Listar serviços</a>
+            <a href="ListarservicoProTecnico.php" class="voltar">Voltar</a>
         </div>
     </form>
     

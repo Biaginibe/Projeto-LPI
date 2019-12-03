@@ -94,6 +94,11 @@ ul{
     opacity: .5;
 }
 
+.voltar{
+    margin-top: 10%;
+    margin-inline-start: 95%;
+}
+
 /*ID*/
 #bloco_centro{
     margin: auto;
